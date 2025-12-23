@@ -1,0 +1,20 @@
+{
+  "name": "Kráľovstvo Skalica",
+  "short_name": "Kráľovstvo",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#fdfaf4",
+  "theme_color": "#1f1307",
+  "icons": [
+    {
+      "src": "assets/img/favicon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "assets/img/favicon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
