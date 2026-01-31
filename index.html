@@ -3,10 +3,10 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Kráľovstvo Skalica – Koloniál, masáže, zážitky</title>
-  <meta name="description" content="Historický dom v Skalici, kde nájdete koloniál s kávou, thajské masáže aj zázemie pre Zlatnícku dolinu." />
+  <title>Kráľovstvo Skalica – káva, masáže, bike aréna aj ubytovanie</title>
+  <meta name="description" content="Historický dom na Kráľovskej 14 v Skalici. Jedny dvere vedú ku Koloniálu s kávou, thajským masážam, bike aréne v Zlatníckej doline aj ubytovaniu." />
   <meta property="og:title" content="Kráľovstvo Skalica" />
-  <meta property="og:description" content="Jedny dvere, viac ciest – káva, masáže aj výjazdy zo Skalice." />
+  <meta property="og:description" content="Jedny dvere, viac ciest – káva, masáže, bike aréna a ubytovanie v historickom dome." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://kralovstvo.sk/" />
   <meta property="og:site_name" content="Kráľovstvo Skalica" />
@@ -25,6 +25,30 @@
   <meta name="theme-color" content="#fdfaf4" />
   <meta name="msapplication-TileColor" content="#1f1307" />
   <link rel="stylesheet" href="assets/css/shared.css" />
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "Kráľovstvo Skalica",
+      "description": "Historický dom zo 17. storočia s Koloniálom, thajskými masážami, bike arénou a butikovým ubytovaním.",
+      "url": "https://kralovstvo.sk/",
+      "telephone": "+421902842251",
+      "email": "ahoj@kralovstvo.sk",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Kráľovská 14",
+        "addressLocality": "Skalica",
+        "postalCode": "909 01",
+        "addressCountry": "SK"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 48.84674,
+        "longitude": 17.23152
+      },
+      "image": "https://kralovstvo.sk/assets/img/og-home.jpg"
+    }
+  </script>
 </head>
 <body>
   <header class="site-header">
@@ -35,7 +59,8 @@
         <ul id="nav-list">
           <li><a href="kava.html">Koloniál káva</a></li>
           <li><a href="masaze.html">Thajské masáže</a></li>
-          <li><a href="#cesty">Cesty</a></li>
+          <li><a href="bike.html">Bike aréna</a></li>
+          <li><a href="ubytovanie.html">Ubytovanie</a></li>
           <li><a href="#kontakt">Kontakt</a></li>
         </ul>
       </nav>
@@ -45,117 +70,92 @@
   <main>
     <section class="hero hero-entry hero-entry-home">
       <div class="container hero-entry-content">
-        <p class="tag">Historický dom, živé zážitky</p>
-        <h1>Vitaj v Kráľovstve Skalica</h1>
-        <p>Domov kávy, tela, oddychu a pohybu. Pod jednou strechou nájdeš rituály aj výlety.</p>
-        <a class="btn btn-secondary hero-cta" href="#cesty">Vyber si svoju cestu</a>
+        <p class="tag">Jedny dvere, štyri voľby</p>
+        <h1>Rozhodni sa a klikni ďalej</h1>
+        <div class="cta-group">
+          <a class="btn btn-secondary hero-cta" href="#cesty">Pozri cesty</a>
+          <a class="text-link" href="mailto:ahoj@kralovstvo.sk?subject=Jedny%20dvere%20viac%20ciest">Napísať nám</a>
+        </div>
       </div>
     </section>
 
     <section class="highlights" id="cesty">
       <div class="container">
-        <h2>Vyber si svoju cestu</h2>
         <div class="grid decision-grid">
           <article>
-            <h3>Koloniálna káva ☕</h3>
-            <p>Čerstvo pražené zrná, rýchle balíčky a ranný rituál pripravený na klik.</p>
-            <a class="btn btn-secondary" href="kava.html">Prejsť na kávu</a>
+            <h3>Káva hneď?</h3>
+            <p>Vyber balík alebo zásobu.</p>
+            <div class="decision-actions">
+              <a class="btn btn-secondary" href="kava.html">Prejsť na kávu</a>
+              <a class="contact-link" href="mailto:ahoj@kralovstvo.sk?subject=Koloni%C3%A1l%20k%C3%A1va">E-mail</a>
+            </div>
           </article>
           <article>
-            <h3>Thajské masáže 💆</h3>
-            <p>Tichý priestor pre regeneráciu tela a mysle. Individuálny prístup, pokoj a čas len pre seba v centre Skalice.</p>
-            <a class="btn btn-secondary" href="masaze.html">Objaviť masáže</a>
+            <h3>Potrebná masáž?</h3>
+            <p>Zvoľ 45 alebo 90 min.</p>
+            <div class="decision-actions">
+              <a class="btn btn-secondary" href="masaze.html">Objaviť masáže</a>
+              <a class="contact-link" href="mailto:masaze@kralovstvo.sk?subject=Rezerv%C3%A1cia%20mas%C3%A1%C5%BEe">E-mail</a>
+            </div>
           </article>
           <article>
-            <h3>Ubytovanie / Pobyt 🏰</h3>
-            <p>Intímne apartmány nad Koloniálom s rannou kávou bez budíku – už čoskoro.</p>
-            <a class="text-link" href="#ubytovanie">Zisti viac</a>
+            <h3>Ideš na bike?</h3>
+            <p>Napíš skupinu a trasu.</p>
+            <div class="decision-actions">
+              <a class="btn btn-secondary" href="bike.html">Naplánovať bike</a>
+              <a class="contact-link" href="mailto:ahoj@kralovstvo.sk?subject=Bike%20aréna">E-mail</a>
+            </div>
           </article>
           <article>
-            <h3>Bike aréna 🚵</h3>
-            <p>Trailové výjazdy v Zlatníckej doline a servisné zázemie priamo v Kráľovstve.</p>
-            <a class="btn btn-secondary" href="#bike-arena">Naplánovať výjazd</a>
+            <h3>Chceš nocľah?</h3>
+            <p>Pošli dátum a počet.</p>
+            <div class="decision-actions">
+              <a class="btn btn-secondary" href="ubytovanie.html">Overiť termín</a>
+              <a class="contact-link" href="mailto:ubytovanie@kralovstvo.sk?subject=Ubytovanie%20Kráľovská%2014">E-mail</a>
+            </div>
           </article>
         </div>
       </div>
     </section>
 
-    <section class="storytelling" id="o-kralovstve">
+    <section class="trust-block" id="kontakt">
       <div class="container">
-        <p class="tag">O Kráľovstve</p>
-        <h2>Historický dom, v ktorom žije káva, telo aj pohyb</h2>
-        <p>
-          Kráľovstvo Skalica je dom z roku 1650, v ktorom sme spojili remeselný Koloniál, thajské terapeutky, intimitu budúcich apartmánov a zázemie pre výjazdy do Zlatníckej doliny. Navštív nás, otvor jedny dvere a vyber si cestu, ktorá ti sedí práve dnes.
-        </p>
-      </div>
-    </section>
-
-    <section class="experience" id="den">
-      <div class="container experience-grid">
-        <div class="experience-copy">
-          <p class="tag">Ako to funguje dnes</p>
-          <h2>Dom, v ktorom sa veci dejú osobne</h2>
-          <p>
-            Kráľovstvo nie je rezort ani program na celý deň.
-            Je to historický dom, kde funguje káva, masáže a pohyb –
-            každé v inom rytme.
-          </p>
-          <p>
-            Koloniál má svoje otváracie hodiny,
-            masáže sú na dohodu
-            a výjazdy či pobyty riešime individuálne.
-          </p>
-          <p>
-            Väčšina vecí sa u nás nedeje cez formuláre,
-            ale osobne – rozhovorom, správou alebo telefonátom.
-          </p>
-          <div class="experience-cta">
-            <a class="btn btn-primary" href="mailto:ahoj@kralovstvo.sk?subject=Deň%20v%20Kráľovstve">Naplánuj návštevu</a>
-            <a class="text-link" href="tel:+421900000000">+421 900 000 000</a>
-          </div>
+        <p class="tag">Kontakt</p>
+        <h2>Kráľovská 14, Skalica</h2>
+        <div class="trust-grid">
+          <article class="trust-card">
+            <p>Potrebuj mapu?</p>
+            <a class="map-link" href="https://maps.google.com/?q=Kráľovská+14,+Skalica" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                <path fill="currentColor" d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 110-5 2.5 2.5 0 010 5z" />
+              </svg>
+              Otvoriť mapu
+            </a>
+          </article>
+          <article class="trust-card">
+            <p>Rýchlo zavolaj alebo napíš.</p>
+            <a class="contact-link" href="tel:+421902842251">+421&nbsp;902&nbsp;842&nbsp;251</a>
+            <a class="contact-link" href="mailto:ahoj@kralovstvo.sk">ahoj@kralovstvo.sk</a>
+          </article>
+          <article class="trust-card">
+            <p>Ubytovanie rieši Darina.</p>
+            <a class="contact-link" href="mailto:ubytovanie@kralovstvo.sk">ubytovanie@kralovstvo.sk</a>
+          </article>
         </div>
-        <figure class="experience-visual">
-          <img src="fotky/masaze/0557d91d-fdf8-44f0-b8b6-6347955095f2.jpg" alt="Pokojná miestnosť thajských masáží v Kráľovstve" loading="lazy" />
-        </figure>
-      </div>
-    </section>
-
-    <section class="highlights" id="ubytovanie">
-      <div class="container">
-        <p class="tag">Ubytovanie</p>
-        <h2>Oddýchni v historických izbách</h2>
-        <p>
-          Pripravujeme tiché butikové ubytovanie priamo nad Koloniálom.
-          Bez recepcie, bez ruchu, v historickom dome v centre Skalice.
-        </p>
-        <p>
-          Ak plánuješ zostať dlhšie, napíš nám – dostupnosť riešime osobne.
-        </p>
-        <a href="mailto:ahoj@kralovstvo.sk?subject=Ubytovanie%20v%20Kráľovstve" class="text-link">
-          Napísať ohľadom ubytovania →
-        </a>
-      </div>
-    </section>
-
-    <section class="highlights" id="bike-arena">
-      <div class="container">
-        <p class="tag">Zlatnícka dolina</p>
-        <h2>Bike aréna s kávovým zázemím</h2>
-        <p>
-          Kráľovstvo stojí na štarte trailov Zlatníckej doliny – doplň kofeín, zober picnic box a vráť sa na masáž. Jazdy organizujeme na mieru, štartuješ u nás.
-        </p>
-        <a class="text-link" href="mailto:ahoj@kralovstvo.sk">Napíš nám</a>
+        <p class="todo-note">TODO: doplniť potvrdené otváracie hodiny.</p>
       </div>
     </section>
   </main>
 
-  <footer class="site-footer" id="kontakt">
+  <footer class="site-footer">
     <div class="container">
       <p>© <span data-current-year></span> Kráľovstvo Skalica</p>
-      <p>Kráľovská 2/14, Skalica · <a href="tel:+421900000000">+421 900 000 000</a> · <a href="mailto:ahoj@kralovstvo.sk">ahoj@kralovstvo.sk</a></p>
+      <p>Kráľovská 14, 909 01 Skalica · <a href="tel:+421902842251">+421&nbsp;902&nbsp;842&nbsp;251</a> · <a href="mailto:ahoj@kralovstvo.sk">ahoj@kralovstvo.sk</a></p>
       <div class="footer-links">
         <a href="kava.html">Koloniál káva</a>
         <a href="masaze.html">Thajské masáže</a>
+        <a href="bike.html">Bike aréna</a>
+        <a href="ubytovanie.html">Ubytovanie</a>
       </div>
     </div>
   </footer>

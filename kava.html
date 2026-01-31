@@ -37,77 +37,124 @@
         <ul id="nav-list">
           <li><a href="kava.html" class="active">Koloniál káva</a></li>
           <li><a href="masaze.html">Thajské masáže</a></li>
-          <li><a href="index.html#cesty">Cesty v Kráľovstve</a></li>
-          <li><a href="#kontakt">Kontakt</a></li>
+          <li><a href="bike.html">Bike aréna</a></li>
+          <li><a href="ubytovanie.html">Ubytovanie</a></li>
+          <li><a href="index.html#kontakt">Kontakt</a></li>
         </ul>
       </nav>
     </div>
   </header>
 
-  <!-- HERO: rýchla cesta k platbe -->
+  <!-- HERO -->
   <section class="hero kava-hero">
     <div class="container hero-content">
-      <span class="tag">Remeselná pražiareň</span>
-      <h1>Káva Koloniál – pravdivý rituál</h1>
-      <p class="text-limit">
-        Vyber si balík a otvoríme ti e-mail s pripravenou správou. Bez registrácie, bez predstierania košíka.
-      </p>
-
+      <span class="tag">Koloniál káva</span>
+      <h1>Vyber si kávu bez rozmýšľania</h1>
+      <p class="text-limit">Klikni na chuť a balenie, potom ťa presunieme do košíka.</p>
       <div class="hero-actions">
-        <a class="btn btn-secondary" href="#krok1">Balíčky & platba</a>
-        <a class="btn btn-secondary" href="#krok2">Pokročilá poznámka</a>
+        <a class="btn btn-secondary" href="#chut">Vybrať kávu</a>
       </div>
     </div>
   </section>
 
   <main>
-    <section class="kava-steps">
+    <section class="section kava-section" id="chut">
       <div class="container">
-        <ol class="stepper" aria-label="Tri kroky objednávky">
-          <li class="step active" data-step="krok1">
-            <span class="step-index">1</span>
-            <div>
-              <p class="step-title">Vyber si</p>
-              <p class="step-desc">Balík alebo jednotlivé kávy</p>
-            </div>
-          </li>
-          <li class="step" data-step="krok2">
-            <span class="step-index">2</span>
-            <div>
-              <p class="step-title">Košík</p>
-              <p class="step-desc">Uprav množstvá</p>
-            </div>
-          </li>
-          <li class="step" data-step="krok3">
-            <span class="step-index">3</span>
-            <div>
-              <p class="step-title">Dokončiť</p>
-              <p class="step-desc">Meno + kontakt</p>
-            </div>
-          </li>
-        </ol>
+        <p class="tag">Krok 1 – Chuť</p>
+        <h2>Ako má káva chutiť?</h2>
+        <div class="grid decision-grid">
+          <article>
+            <h3>Kyslá</h3>
+            <p class="decision-meta">Etiopia Sidamo, Peru Aromas</p>
+          </article>
+          <article>
+            <h3>Vyvážená</h3>
+            <p class="decision-meta">Koloniál Blend, Guatemala Huehuetenango</p>
+          </article>
+          <article>
+            <h3>Horká</h3>
+            <p class="decision-meta">Brasil Santos, India Kaapi Royal</p>
+          </article>
+        </div>
       </div>
     </section>
 
-    <section class="section kava-section step-section step-one" id="krok1">
+    <section class="section kava-section" id="ucel">
+      <div class="container">
+        <p class="tag">Krok 2 – Účel</p>
+        <h2>Na čo ju potrebuješ?</h2>
+        <div class="grid decision-grid">
+          <article>
+            <h3>Na ráno</h3>
+            <p class="decision-meta">ľahšie filtrované espresso</p>
+          </article>
+          <article>
+            <h3>Na sústredenie</h3>
+            <p class="decision-meta">mix dvoch chutí, jedna rezerva</p>
+          </article>
+          <article>
+            <h3>Na dlhý deň</h3>
+            <p class="decision-meta">tmavší profil a viac kofeínu</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section kava-section" id="kedy">
+      <div class="container">
+        <p class="tag">Krok 3 – Kedy</p>
+        <h2>Kedy ju chceš mať?</h2>
+        <div class="grid decision-grid">
+          <article>
+            <h3>Teraz</h3>
+            <p class="decision-meta">vyzdvihneš v Koloniále</p>
+          </article>
+          <article>
+            <h3>Do zásoby</h3>
+            <p class="decision-meta">pripravíme mix na viac dní</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section kava-section" id="balenie">
+      <div class="container">
+        <p class="tag">Krok 4 – Balenie</p>
+        <h2>Koľko balíš?</h2>
+        <div class="grid decision-grid">
+          <article>
+            <h3>Malé balenie</h3>
+            <p class="decision-meta">1× alebo 2× 250 g</p>
+          </article>
+          <article>
+            <h3>Väčšie balenie</h3>
+            <p class="decision-meta">3× balík alebo vlastný mix</p>
+          </article>
+        </div>
+        <div class="cta-group">
+          <a class="btn btn-primary" href="#objednavka">Objednať</a>
+        </div>
+      </div>
+    </section>
+
+    <div id="krok1"></div>
+    <section class="section kava-section step-section" id="objednavka">
       <div class="container">
         <div class="section-heading">
-          <p class="section-subtitle">Krok 1</p>
-          <h2>Vyber balík alebo produkty</h2>
-          <p>Balík ti košík predvyplní, produkty si vieš naklikať na mieru. Po pridaní skočíme ku košíku.</p>
+          <p class="section-subtitle">Objednávka</p>
+          <h2>Klikni na balík alebo konkrétny produkt</h2>
+          <p>Po kliknutí ťa presunieme do košíka.</p>
         </div>
 
         <div class="quick-buy-grid" id="bundleGrid" aria-live="polite"></div>
 
         <div class="quick-buy-note">
-          <p>
-            <strong>Čo sa stane?</strong> Balík pridáme do košíka a ukážeme ti krok 2. Cena balíka sa dohodne v odpovedi, produkty majú orientačné ceny hneď.
-          </p>
+          <p><strong>Po kliknutí</strong> uvidíš košík s orientačnou cenou.</p>
         </div>
 
         <div class="product-headline">
           <p class="section-subtitle">Produkty</p>
-          <h3>Odporúčané kávy</h3>
+          <h3>Chceš miešať ručne?</h3>
         </div>
         <div class="product-grid-card">
           <div class="product-grid" id="productGrid" aria-live="polite"></div>
@@ -115,12 +162,13 @@
       </div>
     </section>
 
-    <section class="section kava-section step-section step-two" id="krok2">
+    <div id="krok2"></div>
+    <section class="section kava-section step-section">
       <div class="container">
         <div class="section-heading">
-          <p class="section-subtitle">Krok 2</p>
-          <h2>Košík – pripravíme objednávku</h2>
-          <p>Košík je uložený len u teba. Keď budeš pripravený, dokončíme to e-mailom a pošleme platobný link alebo potvrdenie vyzdvihnutia.</p>
+          <p class="section-subtitle">Košík</p>
+          <h2>Zkontroluj, čo posielame</h2>
+          <p>Údaje ostávajú len v tvojom prehliadači.</p>
         </div>
 
         <div class="store-layout">
@@ -128,7 +176,7 @@
             <button class="cart-panel-close" id="cartPanelClose" type="button" aria-label="Zavrieť košík">×</button>
             <div class="cart-header">
               <h3>Tvoje položky</h3>
-              <p class="cart-note">Balíky bez ceny označíme ako „dohodou“.</p>
+              <p class="cart-note">Ak nie je cena, vyriešime ju v odpovedi.</p>
             </div>
 
             <div id="cartItems" class="cart-items">
@@ -144,20 +192,21 @@
             </div>
 
             <div class="cart-mini-help">
-              <p>Pripravuješ podklady pre krok 3. Údaje zostávajú len v tvojom prehliadači.</p>
+              <p>Toto je len náhľad, nič neposielame.</p>
             </div>
-            <button class="btn btn-secondary cart-continue" type="button" id="continueShoppingButton">Pokračovať v nákupe</button>
+            <button class="btn btn-secondary cart-continue" type="button" id="continueShoppingButton">Späť na výber</button>
           </aside>
         </div>
       </div>
     </section>
 
-    <section class="section kava-section step-section step-three" id="krok3">
+    <div id="krok3"></div>
+    <section class="section kava-section step-section">
       <div class="container">
         <div class="section-heading">
-          <p class="section-subtitle">Krok 3</p>
-          <h2>Dokončiť objednávku</h2>
-          <p>Po odoslaní odpovieme platobným linkom alebo potvrdením, že všetko čaká pripravené.</p>
+          <p class="section-subtitle">Posledný krok</p>
+          <h2>Napíš, kam to ide</h2>
+          <p>Po odoslaní dostaneš platobný link alebo čas vyzdvihnutia.</p>
         </div>
 
         <form id="checkoutForm" class="checkout-form" novalidate>
@@ -184,33 +233,45 @@
             </label>
           </div>
 
-          <button class="btn btn-primary" type="submit" id="submitOrderButton">Odoslať objednávku</button>
-          <p class="checkout-note">Po odoslaní ti odpíšeme s platobným linkom alebo potvrdením prevzatia.</p>
+          <button class="btn btn-primary" type="submit" id="submitOrderButton">Odoslať</button>
+          <p class="checkout-note">Odpoveď príde do 24 hodín.</p>
         </form>
         <div class="soft-cross-sell">
-          <p class="cross-title">Keď už budeš u nás</p>
-          <p class="cross-text">
-            V rovnakom dome fungujú aj <strong>thajské masáže</strong>.
-            Ak chceš spojiť kávu s 45 alebo 90 minútami pokoja,
-            napíš to do poznámky – termín doladíme osobne.
-          </p>
-          <a href="masaze.html" class="text-link">Pozrieť masáže →</a>
+          <p class="cross-title">Chceš pridať masáž alebo nocľah?</p>
+          <p class="cross-text">Napíš to do poznámky a spojíme ťa s ďalšou cestou.</p>
+          <a href="masaze.html" class="text-link">Masáže →</a>
+          <a href="ubytovanie.html" class="text-link">Ubytovanie →</a>
         </div>
-        <div class="soft-cross-sell">
-          <p class="cross-title">Ak sa zdržíš dlhšie</p>
-          <p class="cross-text">
-            V dome vzniká aj tiché ubytovanie nad Koloniálom.
-            Ak plánuješ rannú kávu bez presúvania, napíš nám to do poznámky.
-          </p>
-        </div>
+      </div>
+    </section>
+
+    <section class="section kava-section">
+      <div class="container">
+        <details>
+          <summary>Pre zvedavých</summary>
+          <ul class="list">
+            <li>Koloniál Blend – 250 g – vyvážená chuť.</li>
+            <li>Etiopia Sidamo – 250 g – citrusy, kyslosť.</li>
+            <li>Guatemala Huehuetenango – 250 g – čokoláda a orechy.</li>
+            <li>Peru Aromas del Valle – 250 g – florálne tóny.</li>
+            <li>Brasil Santos – 250 g – tmavšie espresso.</li>
+            <li>India Kaapi Royal – 250 g – korenistá horkosť.</li>
+          </ul>
+        </details>
       </div>
     </section>
   </main>
 
-  <footer class="site-footer" id="kontakt">
+  <footer class="site-footer">
     <div class="container">
       <p>© <span data-current-year></span> Kráľovstvo Skalica • Káva Koloniál</p>
-      <p><a class="back-link" href="index.html#cesty">← späť do Kráľovstva</a></p>
+      <p>Kráľovská 14, 909 01 Skalica · <a href="tel:+421902842251">+421&nbsp;902&nbsp;842&nbsp;251</a> · <a href="mailto:ahoj@kralovstvo.sk">ahoj@kralovstvo.sk</a></p>
+      <div class="footer-links">
+        <a href="index.html">Domov</a>
+        <a href="masaze.html">Thajské masáže</a>
+        <a href="bike.html">Bike aréna</a>
+        <a href="ubytovanie.html">Ubytovanie</a>
+      </div>
     </div>
   </footer>
 
