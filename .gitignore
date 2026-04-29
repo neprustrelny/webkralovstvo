@@ -1,2 +1,9 @@
 # local archives
 _trash/
+backups/
+.codex/
+servis_kolobezky/
+*.tmp
+*.log
+.DS_Store
+Thumbs.db

@@ -3,10 +3,10 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Kráľovstvo Skalica – káva, masáže, bike aréna aj ubytovanie</title>
-  <meta name="description" content="Historický dom na Kráľovskej 14 v Skalici. Jedny dvere vedú ku Koloniálu s kávou, thajským masážam, bike aréne v Zlatníckej doline aj ubytovaniu." />
+  <title>Kráľovstvo Skalica – káva, masáže, servis kolobežiek aj ubytovanie</title>
+  <meta name="description" content="Historický dom na Kráľovskej 14 v Skalici. Jedny dvere vedú ku Koloniálu s kávou, thajským masážam, pripravovanému servisu elektrokolobežiek v spolupráci s RePa’s aj ubytovaniu." />
   <meta property="og:title" content="Kráľovstvo Skalica" />
-  <meta property="og:description" content="Jedny dvere, viac ciest – káva, masáže, bike aréna a ubytovanie v historickom dome." />
+  <meta property="og:description" content="Jedny dvere, viac ciest – káva, masáže, servis elektrokolobežiek a ubytovanie v historickom dome." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://kralovstvo.sk/" />
   <meta property="og:site_name" content="Kráľovstvo Skalica" />
@@ -30,10 +30,10 @@
       "@context": "https://schema.org",
       "@type": "LocalBusiness",
       "name": "Kráľovstvo Skalica",
-      "description": "Historický dom zo 17. storočia s Koloniálom, thajskými masážami, bike arénou a butikovým ubytovaním.",
+      "description": "Historický dom zo 17. storočia s Koloniálom, thajskými masážami, pripravovaným servisom elektrokolobežiek v spolupráci s RePa’s a butikovým ubytovaním.",
       "url": "https://kralovstvo.sk/",
-      "telephone": "+421902842251",
-      "email": "ahoj@kralovstvo.sk",
+      "telephone": "+421944140519",
+      "email": "neprustrelny.marek@gmail.com",
       "address": {
         "@type": "PostalAddress",
         "streetAddress": "Kráľovská 14",
@@ -53,14 +53,16 @@
 <body>
   <header class="site-header">
     <div class="container header-inner">
-      <a class="logo" href="index.html">Kráľovstvo Skalica</a>
+      <a class="logo" href="index.html" aria-label="Kráľovstvo Skalica">
+        <img src="assets/img/logo-kralovstvo.png" alt="Kráľovstvo Skalica" class="site-logo" />
+      </a>
       <nav class="primary-nav" aria-label="Hlavná navigácia">
         <button class="nav-toggle" aria-expanded="false" aria-controls="nav-list">Menu</button>
         <ul id="nav-list">
-          <li><a href="kava.html">Koloniál káva</a></li>
-          <li><a href="masaze.html">Thajské masáže</a></li>
-          <li><a href="bike.html">Bike aréna</a></li>
-          <li><a href="ubytovanie.html">Ubytovanie</a></li>
+          <li><a href="#kolonial-kava" data-service-trigger="kolonial-kava">Koloniál káva</a></li>
+          <li><a href="#thajske-masaze" data-service-trigger="thajske-masaze">Thajské masáže</a></li>
+          <li><a href="#servis-elektrokolobeziek" data-service-trigger="servis-elektrokolobeziek">Servis kolobežiek</a></li>
+          <li><a href="#ubytovanie" data-service-trigger="ubytovanie">Ubytovanie</a></li>
           <li><a href="#kontakt">Kontakt</a></li>
         </ul>
       </nav>
@@ -69,52 +71,183 @@
 
   <main>
     <section class="hero hero-entry hero-entry-home">
-      <div class="container hero-entry-content">
-        <p class="tag">Jedny dvere, štyri voľby</p>
-        <h1>Rozhodni sa a klikni ďalej</h1>
-        <div class="cta-group">
-          <a class="btn btn-secondary hero-cta" href="#cesty">Pozri cesty</a>
-          <a class="text-link" href="mailto:ahoj@kralovstvo.sk?subject=Jedny%20dvere%20viac%20ciest">Napísať nám</a>
+      <div class="container hero-home-layout">
+        <div class="hero-entry-content hero-home-copy">
+          <p class="tag">Kráľovská 14, Skalica</p>
+          <h1>Vyberte si službu, ktorá vám dnes najviac sedí</h1>
+          <p>Pod jednou strechou nájdete výberovú kávu, thajské masáže, pripravovaný servis elektrokolobežiek aj ubytovanie.</p>
+          <div class="cta-group">
+            <a class="btn btn-secondary" href="#kontakt">Kontakt</a>
+            <a class="text-link" href="mailto:neprustrelny.marek@gmail.com?subject=Kráľovstvo%20Skalica">Napísať nám</a>
+          </div>
+        </div>
+        <div class="hero-cards" data-hero-cards id="cesty">
+          <a class="hero-card" href="#kolonial-kava" data-service-trigger="kolonial-kava" aria-label="Koloniál káva">
+            <span class="hero-card-body">
+              <h3>Koloniál káva</h3>
+              <p>Káva a darčekové balíky. Zastavte sa alebo nám napíšte.</p>
+              <span class="hero-card-cta">Prejsť na kávu</span>
+            </span>
+          </a>
+          <a class="hero-card" href="#thajske-masaze" data-service-trigger="thajske-masaze" aria-label="Thajské masáže">
+            <span class="hero-card-body">
+              <h3>Thajské masáže</h3>
+              <p>Rezervácie 45 / 90 min. Oddych, tlak, úľava.</p>
+              <span class="hero-card-cta">Rezervovať masáž</span>
+            </span>
+          </a>
+          <a class="hero-card" href="#servis-elektrokolobeziek" data-service-trigger="servis-elektrokolobeziek" aria-label="Servis elektrokolobežiek v Skalici">
+            <span class="hero-card-body">
+              <h3>Servis kolobežiek</h3>
+              <p>RePa’s v Kráľovstve. Prvé servisné požiadavky po dohode.</p>
+              <span class="hero-card-cta">Poslať problém</span>
+            </span>
+          </a>
+          <a class="hero-card" href="#ubytovanie" data-service-trigger="ubytovanie" aria-label="Ubytovanie">
+            <span class="hero-card-body">
+              <h3>Ubytovanie</h3>
+              <p>Overte termín a cenu. Rýchla odpoveď.</p>
+              <span class="hero-card-cta">Overiť termín</span>
+            </span>
+          </a>
         </div>
       </div>
     </section>
 
-    <section class="highlights" id="cesty">
+    <section class="service-detail-area" id="sluzby-detail" aria-live="polite">
       <div class="container">
-        <div class="grid decision-grid">
-          <article>
-            <h3>Káva hneď?</h3>
-            <p>Vyber balík alebo zásobu.</p>
-            <div class="decision-actions">
-              <a class="btn btn-secondary" href="kava.html">Prejsť na kávu</a>
-              <a class="contact-link" href="mailto:ahoj@kralovstvo.sk?subject=Koloni%C3%A1l%20k%C3%A1va">E-mail</a>
+        <article class="service-panel" id="kolonial-kava" data-service-panel="kolonial-kava">
+          <p class="tag">Káva a darčekové balíky</p>
+          <h2>Koloniál káva</h2>
+          <p>
+            Výberová káva, darčekové balíky a jednoduchá objednávka po dohode.
+            Zastavte sa u nás v Kráľovstve alebo nám napíšte, čo by ste potrebovali pripraviť.
+          </p>
+          <div class="trust-grid">
+            <div class="trust-card">
+              <h3>Čerstvá káva</h3>
+              <p>Výberová káva a balíky pripravené podľa dohody.</p>
             </div>
-          </article>
-          <article>
-            <h3>Potrebná masáž?</h3>
-            <p>Zvoľ 45 alebo 90 min.</p>
-            <div class="decision-actions">
-              <a class="btn btn-secondary" href="masaze.html">Objaviť masáže</a>
-              <a class="contact-link" href="mailto:masaze@kralovstvo.sk?subject=Rezerv%C3%A1cia%20mas%C3%A1%C5%BEe">E-mail</a>
+            <div class="trust-card">
+              <h3>Darčeky</h3>
+              <p>Pre návštevy, firmy alebo blízkych.</p>
             </div>
-          </article>
-          <article>
-            <h3>Ideš na bike?</h3>
-            <p>Napíš skupinu a trasu.</p>
-            <div class="decision-actions">
-              <a class="btn btn-secondary" href="bike.html">Naplánovať bike</a>
-              <a class="contact-link" href="mailto:ahoj@kralovstvo.sk?subject=Bike%20aréna">E-mail</a>
+            <div class="trust-card">
+              <h3>Osobný odber</h3>
+              <p>Možnosť osobného odberu po dohode.</p>
             </div>
-          </article>
-          <article>
-            <h3>Chceš nocľah?</h3>
-            <p>Pošli dátum a počet.</p>
-            <div class="decision-actions">
-              <a class="btn btn-secondary" href="ubytovanie.html">Overiť termín</a>
-              <a class="contact-link" href="mailto:ubytovanie@kralovstvo.sk?subject=Ubytovanie%20Kráľovská%2014">E-mail</a>
+          </div>
+          <div class="service-actions">
+            <a class="btn btn-secondary" href="kava.html">Vybrať kávu</a>
+          </div>
+        </article>
+
+        <article class="service-panel" id="thajske-masaze" data-service-panel="thajske-masaze">
+          <p class="tag">Oddych, tlak, úľava</p>
+          <h2>Thajské masáže</h2>
+          <p>
+            Thajské masáže v pokojnom zázemí Kráľovstva.
+            Rezervácie riešime po dohode podľa dostupných termínov.
+          </p>
+          <div class="trust-grid">
+            <div class="trust-card">
+              <h3>45 alebo 90 minút</h3>
+              <p>Vyberieme dĺžku podľa potreby a dostupnosti.</p>
             </div>
-          </article>
-        </div>
+            <div class="trust-card">
+              <h3>Podľa tela</h3>
+              <p>Masáž prispôsobíme tomu, čo práve potrebujete uvoľniť.</p>
+            </div>
+            <div class="trust-card">
+              <h3>Poukaz</h3>
+              <p>Darčekový poukaz pripravíme po dohode.</p>
+            </div>
+          </div>
+          <div class="service-actions">
+            <a class="btn btn-secondary" href="mailto:neprustrelny.marek@gmail.com?subject=Rezervacia%20masaze%20-%20Kralovstvo%20Skalica">Rezervovať masáž</a>
+            <a class="text-link" href="masaze.html">Prejsť na detail masáží</a>
+          </div>
+        </article>
+
+        <article class="service-panel" id="servis-elektrokolobeziek" data-service-panel="servis-elektrokolobeziek">
+          <p class="tag">RePa’s v Kráľovstve</p>
+          <h2>Servis elektrokolobežiek v Skalici</h2>
+          <p>
+            Defekt, slabá batéria, brzdy alebo elektronika? Pošlite model, problém a fotku.
+            Prvé servisné požiadavky riešime po dohode v spolupráci s RePa’s.
+          </p>
+
+          <figure class="service-photo">
+            <picture>
+              <source srcset="assets/img/servis-kolobeziek/servis-kolobezky-dielna-01.webp" type="image/webp" />
+              <img
+                src="assets/img/servis-kolobeziek/servis-kolobezky-dielna-01.jpg"
+                alt="Servis elektrokolobežky v dielni RePa’s v Kráľovstve"
+                width="1200"
+                height="675"
+                loading="lazy"
+              />
+            </picture>
+            <figcaption>Prvé servisné požiadavky riešime po dohode v spolupráci so servisným technikom RePa’s.</figcaption>
+          </figure>
+
+          <div class="trust-grid">
+            <div class="trust-card">
+              <h3>Diagnostika</h3>
+              <p>Poruchy, riadiace jednotky, displeje a kabeláž.</p>
+            </div>
+
+            <div class="trust-card">
+              <h3>Batérie a BMS</h3>
+              <p>Kontrola batérie, BMS a článkov až po dohode so servisným technikom.</p>
+            </div>
+
+            <div class="trust-card">
+              <h3>Mechanika</h3>
+              <p>Defekty, pneumatiky, brzdy, ložiská a predsezónna kontrola.</p>
+            </div>
+          </div>
+
+          <div class="service-actions">
+            <a class="contact-link" href="mailto:neprustrelny.marek@gmail.com?subject=Servis%20elektrokolobezky%20-%20RePa%27s%20v%20Kralovstve&body=Dobry%20den,%0A%0Aprosim%20o%20servis%20elektrokolobezky.%0A%0AZnacka%20a%20model:%0APopis%20problemu:%0AFotka%20alebo%20video:%0ATelefon:%0A%0ADakujem.">
+              Poslať problém
+            </a>
+            <a class="contact-link" href="tel:+421944140519">
+              Zavolať: +421&nbsp;944&nbsp;140&nbsp;519
+            </a>
+          </div>
+
+          <p class="todo-note">
+            Pri podozrení na poškodenú batériu zariadenie nenabíjajte a najprv nám napíšte.
+          </p>
+        </article>
+
+        <article class="service-panel" id="ubytovanie" data-service-panel="ubytovanie">
+          <p class="tag">Overenie termínu po dohode</p>
+          <h2>Ubytovanie na Kráľovskej</h2>
+          <p>
+            Ubytovanie v historickom dome na Kráľovskej 14. Pošlite nám termín, počet osôb
+            a krátku predstavu pobytu, preveríme dostupnosť a ozveme sa späť.
+          </p>
+          <div class="trust-grid">
+            <div class="trust-card">
+              <h3>Historický dom</h3>
+              <p>Zázemie v centre Skalice na Kráľovskej 14.</p>
+            </div>
+            <div class="trust-card">
+              <h3>Pokoj</h3>
+              <p>Pokojné zázemie pre oddych aj krátky pobyt.</p>
+            </div>
+            <div class="trust-card">
+              <h3>Po dohode</h3>
+              <p>Termín a cenu preveríme podľa vašej správy.</p>
+            </div>
+          </div>
+          <div class="service-actions">
+            <a class="btn btn-secondary" href="mailto:ubytovanie@nakralovskej.sk?subject=Ubytovanie%20Kralovska%2014%20-%20overenie%20terminu">Overiť termín</a>
+            <a class="text-link" href="ubytovanie.html">Prejsť na detail ubytovania</a>
+          </div>
+        </article>
       </div>
     </section>
 
@@ -124,25 +257,27 @@
         <h2>Kráľovská 14, Skalica</h2>
         <div class="trust-grid">
           <article class="trust-card">
-            <p>Potrebuj mapu?</p>
+            <h3>Mapa</h3>
+            <p>Nájdete nás na Kráľovskej 14 v Skalici.</p>
             <a class="map-link" href="https://maps.google.com/?q=Kráľovská+14,+Skalica" target="_blank" rel="noopener">
-              <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+              <svg viewBox="0 0 24 24" width="48" height="48" aria-hidden="true" focusable="false">
                 <path fill="currentColor" d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 110-5 2.5 2.5 0 010 5z" />
               </svg>
               Otvoriť mapu
             </a>
           </article>
           <article class="trust-card">
-            <p>Rýchlo zavolaj alebo napíš.</p>
-            <a class="contact-link" href="tel:+421902842251">+421&nbsp;902&nbsp;842&nbsp;251</a>
-            <a class="contact-link" href="mailto:ahoj@kralovstvo.sk">ahoj@kralovstvo.sk</a>
+            <h3>Kontakt</h3>
+            <p>Zavolajte alebo napíšte, podľa toho, čo chcete riešiť.</p>
+            <a class="contact-link" href="tel:+421944140519">+421&nbsp;944&nbsp;140&nbsp;519</a>
+            <a class="contact-link" href="mailto:neprustrelny.marek@gmail.com">neprustrelny.marek@gmail.com</a>
           </article>
           <article class="trust-card">
-            <p>Ubytovanie rieši Darina.</p>
-            <a class="contact-link" href="mailto:ubytovanie@kralovstvo.sk">ubytovanie@kralovstvo.sk</a>
+            <h3>Ubytovanie</h3>
+            <p>Termín a cenu preveríme po správe.</p>
+            <a class="contact-link" href="mailto:ubytovanie@nakralovskej.sk">ubytovanie@nakralovskej.sk</a>
           </article>
         </div>
-        <p class="todo-note">TODO: doplniť potvrdené otváracie hodiny.</p>
       </div>
     </section>
   </main>
@@ -150,12 +285,12 @@
   <footer class="site-footer">
     <div class="container">
       <p>© <span data-current-year></span> Kráľovstvo Skalica</p>
-      <p>Kráľovská 14, 909 01 Skalica · <a href="tel:+421902842251">+421&nbsp;902&nbsp;842&nbsp;251</a> · <a href="mailto:ahoj@kralovstvo.sk">ahoj@kralovstvo.sk</a></p>
+      <p>Kráľovská 14, 909 01 Skalica · <a href="tel:+421944140519">+421&nbsp;944&nbsp;140&nbsp;519</a> · <a href="mailto:neprustrelny.marek@gmail.com">neprustrelny.marek@gmail.com</a></p>
       <div class="footer-links">
-        <a href="kava.html">Koloniál káva</a>
-        <a href="masaze.html">Thajské masáže</a>
-        <a href="bike.html">Bike aréna</a>
-        <a href="ubytovanie.html">Ubytovanie</a>
+        <a href="#kolonial-kava">Koloniál káva</a>
+        <a href="#thajske-masaze">Thajské masáže</a>
+        <a href="#servis-elektrokolobeziek">Servis kolobežiek</a>
+        <a href="#ubytovanie">Ubytovanie</a>
       </div>
     </div>
   </footer>
