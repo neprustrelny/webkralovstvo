@@ -3,10 +3,10 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Ubytovanie na Kráľovskej 14 – Kráľovstvo Skalica</title>
-  <meta name="description" content="Apartmány nad Koloniálom s kapacitou 20 lôžok. Kuchynka, Wi-Fi, parkovanie vo dvore a história domu z roku 1650." />
-  <meta property="og:title" content="Ubytovanie na Kráľovskej 14 – Kráľovstvo Skalica" />
-  <meta property="og:description" content="Priestranné apartmány s vlastnou kúpeľňou, kuchynkou a parkovaním v historickom centre Skalice." />
+  <title>Ubytovanie v centre Skalice – Kráľovstvo Skalica</title>
+  <meta name="description" content="Ubytovanie na Kráľovskej 14 v historickom centre Skalice. Pošlite nezáväznú žiadosť a dostupnosť aj cenu vám potvrdíme telefonicky alebo e-mailom." />
+  <meta property="og:title" content="Ubytovanie v centre Skalice – Kráľovstvo Skalica" />
+  <meta property="og:description" content="Pošlite termín pobytu a počet osôb. Dostupnosť a cenu preveríme a ozveme sa vám späť." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://kralovstvo.sk/ubytovanie.html" />
   <meta property="og:site_name" content="Kráľovstvo Skalica" />
@@ -25,6 +25,7 @@
   <meta name="theme-color" content="#fdfaf4" />
   <meta name="msapplication-TileColor" content="#1f1307" />
   <link rel="stylesheet" href="assets/css/shared.css" />
+  <link rel="stylesheet" href="assets/css/ubytovanie.css" />
 </head>
 <body>
   <header class="site-header">
@@ -38,69 +39,242 @@
           <li><a href="index.html#kolonial-kava">Koloniál káva</a></li>
           <li><a href="index.html#thajske-masaze">Thajské masáže</a></li>
           <li><a href="index.html#servis-elektrokolobeziek">Servis kolobežiek</a></li>
-          <li><a href="index.html#ubytovanie" class="active">Ubytovanie</a></li>
+          <li><a href="ubytovanie.html" class="active" aria-current="page">Ubytovanie</a></li>
           <li><a href="index.html#kontakt">Kontakt</a></li>
         </ul>
       </nav>
     </div>
   </header>
 
-  <main class="container compact">
-    <section class="hero hero-compact">
-      <div class="hero-copy">
-        <p class="tag">Bývanie nad Koloniálom</p>
-        <h1>Kto spí v dome?</h1>
-        <p>20 lôžok v 5 apartmánoch, kuchynka, Wi-Fi, dvor.</p>
-        <div class="cta-group">
-          <a class="btn btn-primary" href="mailto:ubytovanie@nakralovskej.sk?subject=Ubytovanie%20Kr%C3%A1%C4%BEovsk%C3%A1%2014">Overiť termín</a>
-          <a class="text-link link-subtle" href="tel:+421944140519">+421&nbsp;944&nbsp;140&nbsp;519</a>
+  <main class="container accommodation-page">
+    <section class="accommodation-hero" aria-labelledby="accommodation-title">
+      <div class="accommodation-hero-copy">
+        <p class="tag">Ubytovanie na Kráľovskej 14</p>
+        <h1 id="accommodation-title">Ubytovanie v historickom centre Skalice</h1>
+        <p class="accommodation-lead">Pošlite nám termín pobytu a počet osôb. Dostupnosť a cenu preveríme a ozveme sa vám späť.</p>
+        <div class="cta-group accommodation-actions">
+          <a class="btn btn-primary" href="#rezervacia">Overiť dostupnosť</a>
+          <div class="accommodation-contact" aria-label="Kontaktné údaje ubytovania">
+            <a class="text-link" href="tel:+421944140519">+421&nbsp;944&nbsp;140&nbsp;519</a>
+            <a class="text-link" href="mailto:ubytovanie@nakralovskej.sk">ubytovanie@nakralovskej.sk</a>
+          </div>
+        </div>
+      </div>
+      <aside class="request-note" aria-label="Ako funguje žiadosť o rezerváciu">
+        <strong>Žiadosť o rezerváciu</strong>
+        <p>Odoslaním formulára nevzniká potvrdená rezervácia. Dostupnosť, cenu a možnosti ubytovania vám potvrdíme telefonicky alebo e-mailom.</p>
+      </aside>
+    </section>
+
+    <section class="accommodation-info" aria-labelledby="info-title">
+      <div class="section-heading">
+        <p class="tag">Praktické informácie</p>
+        <h2 id="info-title">Čo je dobré vedieť pred pobytom</h2>
+      </div>
+      <div class="info-grid">
+        <article class="info-card">
+          <span class="info-card-number" aria-hidden="true">01</span>
+          <h3>Súkromné parkovanie</h3>
+          <p>Parkovať môžete vo dvore v uzavretom súkromnom areáli. K dispozícii je aj verejné neplatené parkovanie v okolí.</p>
+        </article>
+        <article class="info-card">
+          <span class="info-card-number" aria-hidden="true">02</span>
+          <h3>Zvieratá po dohode</h3>
+          <p>Pobyt s domácim zvieraťom je možný po predchádzajúcej dohode.</p>
+        </article>
+        <article class="info-card">
+          <span class="info-card-number" aria-hidden="true">03</span>
+          <h3>Počet osôb preveríme</h3>
+          <p>Vo formulári uveďte počet hostí. Možnosti ubytovania preveríme podľa požadovaného termínu a ozveme sa vám.</p>
+        </article>
+        <article class="info-card">
+          <span class="info-card-number" aria-hidden="true">04</span>
+          <h3>Bez minimálneho počtu nocí</h3>
+          <p>Počet nocí nie je pevne obmedzený. Každú požiadavku preveríme individuálne.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="accommodation-gallery" aria-labelledby="gallery-title">
+      <div class="section-heading">
+        <p class="tag">Priestory</p>
+        <h2 id="gallery-title">Galéria ubytovania</h2>
+        <p>Fotografie pripravujeme. Dočasné náhľady neskôr jednoducho nahradíme skutočnými zábermi ubytovania.</p>
+      </div>
+      <div class="gallery-grid">
+        <figure class="gallery-item">
+          <!-- Tento blok nahraďte elementom <img src="..." alt="Apartmán" loading="lazy" />. -->
+          <div class="gallery-placeholder" role="img" aria-label="Dočasné miesto pre fotografiu: Apartmán">
+            <svg viewBox="0 0 48 48" aria-hidden="true"><path d="M8 11h32v26H8zM8 30l9-8 7 6 5-4 11 9M31 18a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" /></svg>
+            <span>Fotografia bude doplnená</span>
+          </div>
+          <figcaption>Apartmán</figcaption>
+        </figure>
+        <figure class="gallery-item">
+          <!-- Tento blok nahraďte elementom <img src="..." alt="Spálňa" loading="lazy" />. -->
+          <div class="gallery-placeholder" role="img" aria-label="Dočasné miesto pre fotografiu: Spálňa">
+            <svg viewBox="0 0 48 48" aria-hidden="true"><path d="M8 11h32v26H8zM8 30l9-8 7 6 5-4 11 9M31 18a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" /></svg>
+            <span>Fotografia bude doplnená</span>
+          </div>
+          <figcaption>Spálňa</figcaption>
+        </figure>
+        <figure class="gallery-item">
+          <!-- Tento blok nahraďte elementom <img src="..." alt="Kúpeľňa" loading="lazy" />. -->
+          <div class="gallery-placeholder" role="img" aria-label="Dočasné miesto pre fotografiu: Kúpeľňa">
+            <svg viewBox="0 0 48 48" aria-hidden="true"><path d="M8 11h32v26H8zM8 30l9-8 7 6 5-4 11 9M31 18a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" /></svg>
+            <span>Fotografia bude doplnená</span>
+          </div>
+          <figcaption>Kúpeľňa</figcaption>
+        </figure>
+        <figure class="gallery-item">
+          <!-- Tento blok nahraďte elementom <img src="..." alt="Kuchynka" loading="lazy" />. -->
+          <div class="gallery-placeholder" role="img" aria-label="Dočasné miesto pre fotografiu: Kuchynka">
+            <svg viewBox="0 0 48 48" aria-hidden="true"><path d="M8 11h32v26H8zM8 30l9-8 7 6 5-4 11 9M31 18a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" /></svg>
+            <span>Fotografia bude doplnená</span>
+          </div>
+          <figcaption>Kuchynka</figcaption>
+        </figure>
+        <figure class="gallery-item">
+          <!-- Tento blok nahraďte elementom <img src="..." alt="Súkromný dvor" loading="lazy" />. -->
+          <div class="gallery-placeholder" role="img" aria-label="Dočasné miesto pre fotografiu: Súkromný dvor">
+            <svg viewBox="0 0 48 48" aria-hidden="true"><path d="M8 11h32v26H8zM8 30l9-8 7 6 5-4 11 9M31 18a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" /></svg>
+            <span>Fotografia bude doplnená</span>
+          </div>
+          <figcaption>Súkromný dvor</figcaption>
+        </figure>
+        <figure class="gallery-item">
+          <!-- Tento blok nahraďte elementom <img src="..." alt="Historický dom" loading="lazy" />. -->
+          <div class="gallery-placeholder" role="img" aria-label="Dočasné miesto pre fotografiu: Historický dom">
+            <svg viewBox="0 0 48 48" aria-hidden="true"><path d="M8 11h32v26H8zM8 30l9-8 7 6 5-4 11 9M31 18a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" /></svg>
+            <span>Fotografia bude doplnená</span>
+          </div>
+          <figcaption>Historický dom</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section id="rezervacia" class="reservation-section" aria-labelledby="reservation-title">
+      <div class="reservation-card">
+        <div class="reservation-intro">
+          <p class="tag">Žiadosť o rezerváciu</p>
+          <h2 id="reservation-title">Overte si dostupnosť ubytovania</h2>
+          <p>Vyplňte termín pobytu a kontaktné údaje. Dostupnosť a cenu preveríme a ozveme sa vám späť.</p>
+        </div>
+
+        <form name="ubytovanie-rezervacia" method="POST" data-netlify="true" data-netlify-honeypot="bot-field" id="reservation-form">
+          <input type="hidden" name="form-name" value="ubytovanie-rezervacia" />
+          <input type="hidden" name="source" value="ubytovanie.html" />
+          <p class="form-honeypot" hidden>
+            <label>
+              Toto pole nevypĺňajte:
+              <input name="bot-field" />
+            </label>
+          </p>
+
+          <div class="form-grid">
+            <div class="form-field">
+              <label for="name">Meno a priezvisko</label>
+              <input type="text" id="name" name="name" autocomplete="name" required aria-invalid="false" aria-describedby="name-error" />
+              <p class="form-error" id="name-error" aria-live="polite" hidden></p>
+            </div>
+
+            <div class="form-field">
+              <label for="phone">Telefón</label>
+              <input type="tel" id="phone" name="phone" autocomplete="tel" inputmode="tel" required aria-invalid="false" aria-describedby="phone-help phone-error" />
+              <p class="form-help" id="phone-help">Telefón potrebujeme, aby sme vás mohli kontaktovať späť.</p>
+              <p class="form-error" id="phone-error" aria-live="polite" hidden></p>
+            </div>
+
+            <div class="form-field">
+              <label for="email">E-mail – nepovinné</label>
+              <input type="email" id="email" name="email" autocomplete="email" inputmode="email" aria-invalid="false" aria-describedby="email-error" />
+              <p class="form-error" id="email-error" aria-live="polite" hidden></p>
+            </div>
+
+            <div class="form-field">
+              <label for="guests">Počet osôb</label>
+              <input type="number" id="guests" name="guests" min="1" inputmode="numeric" required aria-invalid="false" aria-describedby="guests-help guests-error" />
+              <p class="form-help" id="guests-help">Možnosti ubytovania preveríme podľa termínu a počtu hostí.</p>
+              <p class="form-error" id="guests-error" aria-live="polite" hidden></p>
+            </div>
+
+            <div class="form-field">
+              <label for="arrival">Dátum príchodu</label>
+              <input type="date" id="arrival" name="arrival" required aria-invalid="false" aria-describedby="arrival-error" />
+              <p class="form-error" id="arrival-error" aria-live="polite" hidden></p>
+            </div>
+
+            <div class="form-field">
+              <label for="departure">Dátum odchodu</label>
+              <input type="date" id="departure" name="departure" required aria-invalid="false" aria-describedby="departure-error" />
+              <p class="form-error" id="departure-error" aria-live="polite" hidden></p>
+            </div>
+
+            <div class="form-field form-field-full">
+              <label for="message">Otázky alebo poznámka</label>
+              <textarea id="message" name="message" maxlength="1000" rows="5" placeholder="Napríklad požiadavka na parkovanie, pobyt so zvieraťom, typ postelí alebo čas príchodu." aria-invalid="false" aria-describedby="message-count message-error"></textarea>
+              <div class="message-meta">
+                <p class="form-error" id="message-error" aria-live="polite" hidden></p>
+                <p class="character-count" id="message-count" aria-live="polite">0 / 1000</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="stay-summary" id="stay-summary" aria-live="polite" hidden>
+            <h3>Súhrn pobytu</h3>
+            <dl>
+              <div><dt>Príchod</dt><dd id="summary-arrival">–</dd></div>
+              <div><dt>Odchod</dt><dd id="summary-departure">–</dd></div>
+              <div><dt>Počet nocí</dt><dd id="summary-nights">–</dd></div>
+              <div><dt>Počet osôb</dt><dd id="summary-guests">–</dd></div>
+            </dl>
+            <p>Súhrn je iba informatívny. Nepotvrdzuje dostupnosť ani cenu.</p>
+          </div>
+
+          <div class="privacy-block">
+            <p>Údaje použijeme iba na vybavenie vašej požiadavky na ubytovanie.</p>
+            <div class="consent-field">
+              <input type="checkbox" id="privacy-consent" name="privacy-consent" required aria-invalid="false" aria-describedby="privacy-consent-error" />
+              <label for="privacy-consent">Súhlasím so spracovaním uvedených údajov na účely vybavenia mojej žiadosti o ubytovanie.</label>
+            </div>
+            <p class="form-error" id="privacy-consent-error" aria-live="polite" hidden></p>
+          </div>
+
+          <div class="form-actions">
+            <button class="btn btn-primary reservation-submit" type="submit">Odoslať žiadosť o rezerváciu</button>
+            <p>Odoslaním formulára nevzniká automaticky potvrdená rezervácia. Dostupnosť a cenu vám potvrdíme samostatne.</p>
+          </div>
+
+          <div class="form-status form-status-error" id="form-error-status" role="alert" aria-live="assertive" tabindex="-1" hidden>
+            Žiadosť sa nepodarilo odoslať. Skúste to znova alebo nás kontaktujte na čísle <a href="tel:+421944140519">+421&nbsp;944&nbsp;140&nbsp;519</a>.
+          </div>
+        </form>
+
+        <div class="form-success" id="form-success" role="status" aria-live="polite" tabindex="-1" hidden>
+          <p class="tag">Žiadosť o rezerváciu</p>
+          <h3>Žiadosť sme prijali</h3>
+          <p>Ďakujeme. Dostupnosť termínu preveríme a ozveme sa vám na uvedený telefón alebo e-mail.</p>
+          <dl class="success-summary">
+            <div><dt>Príchod</dt><dd id="success-arrival">–</dd></div>
+            <div><dt>Odchod</dt><dd id="success-departure">–</dd></div>
+            <div><dt>Počet nocí</dt><dd id="success-nights">–</dd></div>
+            <div><dt>Počet osôb</dt><dd id="success-guests">–</dd></div>
+          </dl>
+          <button class="btn btn-secondary" type="button" id="send-another-request">Odoslať ďalšiu žiadosť</button>
         </div>
       </div>
     </section>
 
-    <section class="grid two-cols">
-      <article>
-        <h2>Koľko a na ako dlho?</h2>
-        <ul class="list">
-          <li>2–20 ľudí, prístelky podľa dohody.</li>
-          <li>Noc, víkend alebo projekt.</li>
-          <li>Parkovanie a gril vo dvore.</li>
-        </ul>
-      </article>
-      <article>
-        <h2>Čo je v apartmánoch?</h2>
-        <ul class="list">
-          <li>Kúpeľňa, kuchynka, Wi-Fi.</li>
-          <li>TV + pracovný stôl.</li>
-          <li>Kávu berieš o poschodie nižšie.</li>
-        </ul>
-      </article>
-    </section>
-
-    <section class="grid two-cols">
-      <article>
-        <h2>Čo poslať v e-maile</h2>
-        <ul class="list">
-          <li>Dátum príchodu a odchodu.</li>
-          <li>Počet ľudí + typ postelí.</li>
-          <li>Či chceš pridať masáž alebo bike.</li>
-        </ul>
-      </article>
-      <article>
-        <h2>Kde nás nájdeš</h2>
-        <p>Kráľovská 14 · vstup z ulice.</p>
-        <a class="map-link" href="https://maps.google.com/?q=Kráľovská+14,+Skalica" target="_blank" rel="noopener">
-          <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
-            <path fill="currentColor" d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 110-5 2.5 2.5 0 010 5z" />
-          </svg>
-          Otvoriť mapu
-        </a>
-      </article>
-    </section>
-
-    <section class="final-cta">
-      <p class="final-text">Napíš dátumy a počet osôb. Potvrdíme do 24 hodín.</p>
-      <a class="btn btn-primary" href="mailto:ubytovanie@nakralovskej.sk?subject=Ubytovanie%20Kr%C3%A1%C4%BEovsk%C3%A1%2014">Napísať o ubytovaní</a>
+    <section class="accommodation-fallback" aria-labelledby="fallback-title">
+      <div>
+        <p class="tag">Záložný kontakt</p>
+        <h2 id="fallback-title">Potrebujete sa najprv poradiť?</h2>
+        <p>Zavolajte alebo napíšte. Dostupnosť, cenu a možnosti pobytu vám následne potvrdí prevádzkovateľ.</p>
+      </div>
+      <div class="fallback-links">
+        <a class="btn btn-secondary" href="tel:+421944140519">+421&nbsp;944&nbsp;140&nbsp;519</a>
+        <a class="text-link" href="mailto:ubytovanie@nakralovskej.sk">ubytovanie@nakralovskej.sk</a>
+      </div>
     </section>
   </main>
 
@@ -112,12 +286,13 @@
         <a href="index.html#kolonial-kava">Koloniál káva</a>
         <a href="index.html#thajske-masaze">Thajské masáže</a>
         <a href="index.html#servis-elektrokolobeziek">Servis kolobežiek</a>
-        <a href="index.html#ubytovanie">Ubytovanie</a>
+        <a href="ubytovanie.html">Ubytovanie</a>
         <a href="index.html#kontakt">Kontakt</a>
       </div>
     </div>
   </footer>
 
   <script src="assets/js/site.js" defer></script>
+  <script src="assets/js/ubytovanie.js" defer></script>
 </body>
 </html>
